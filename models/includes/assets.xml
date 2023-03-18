@@ -1,0 +1,12 @@
+<mujoco>
+    <asset>
+        <texture type="skybox" builtin="gradient" rgb1="0.3 0.5 0.7" rgb2="0 0 0" width="512" height="512" />
+        <material name="plane" specular=".0" shininess=".0" reflectance="0.0" rgba="1. 1. 1. 1"/>
+        <texture name="carpet" file="carpet.png" type="2d"/>
+        <material name="matcarpet" texture="carpet"/>
+        <texture name="texsponge" type="2d" file="sponge.png"/>
+        <material name="sponge" texture="texsponge"/>
+
+
+    </asset>
+</mujoco>

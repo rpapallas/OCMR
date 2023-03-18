@@ -1,0 +1,131 @@
+<mujoco>
+    <custom>
+        <text name="task" data="RTC Plane Shelf" />
+    </custom>
+    <include file="includes/options.xml" />
+    <include file="includes/assets.xml" />
+    <include file="includes/panda.xml" />
+
+    <worldbody>
+        <include file="includes/camera.xml" />
+        <include file="includes/floor.xml" />
+        <include file="includes/shelf_plane.xml" />
+
+        <body name="movable_obstacle_1" pos="0.7137501251045797 -0.08474386078480353 0.04797048078189426" quat="0.8613775282959413 3.18152463190516e-17 1.7724259422672416e-17 0.5079653076212735">
+            <joint name="joint_movable_obstacle_1" type="free" />
+            <composite prefix="co_1" type="box" count="3 4 4" spacing="0.03">
+                <skin material="sponge" texcoord="true" rgba=".7 .7 .7 1" />
+                <geom mass="0.0001" friction="0.1 0.1 0.1" type="capsule" size="0.01 0.03" rgba=".8 .2 .1 1" />
+                <joint kind="main" solreffix="0.03 1" solimpfix="0 .1 .01" />
+            </composite>
+        </body>
+
+        <body name="movable_obstacle_2" pos="0.5861056333953172 0.26641087472625136 0.04797048078189431" quat="0.7962239893106476 3.039084803299268e-17 -2.305970874376053e-17 -0.6050019494565598">
+            <joint name="joint_movable_obstacle_2" type="free" />
+            <composite prefix="co_2" type="box" count="3 4 4" spacing="0.03">
+                <skin material="sponge" texcoord="true" rgba=".7 .7 .7 1" />
+                <geom mass="0.0001" friction="0.1 0.1 0.1" type="capsule" size="0.01 0.03" rgba=".8 .2 .1 1" />
+                <joint kind="main" solreffix="0.03 1" solimpfix="0 .1 .01" />
+            </composite>
+        </body>
+
+        <body name="movable_obstacle_3" pos="0.6615971607417032 0.2064855455470967 0.04797048078189432" quat="0.955315617377091 3.4533084462283696e-17 9.412669949483445e-18 0.2955876709124171">
+            <joint name="joint_movable_obstacle_3" type="free" />
+            <composite prefix="co_3" type="box" count="3 4 4" spacing="0.03">
+                <skin material="sponge" texcoord="true" rgba=".7 .7 .7 1" />
+                <geom mass="0.0001" friction="0.1 0.1 0.1" type="capsule" size="0.01 0.03" rgba=".8 .2 .1 1" />
+                <joint kind="main" solreffix="0.03 1" solimpfix="0 .1 .01" />
+            </composite>
+        </body>
+
+        <body name="goal_object" pos="0.6583044395165045 0.058918871309682756 0.04999696870367352" quat="0.9204680261877031 1.1923412968978912e-08 6.6380494425417406e-09 -0.3908178767227955">
+            <geom mass="0.01" friction="0.1 0.1 0.1" name="geom_goal_object" rgba="0 1 0. 1" size="0.03 0.05" type="cylinder" />
+            <joint name="joint_goal_object" type="free" />
+        </body>
+
+        <body name="movable_obstacle_4" pos="0.5307137139923122 -0.19489233225185373 0.04999696870367356" quat="0.9999465118046346 1.2746490787344603e-08 1.0939531430231297e-09 -0.010342800865530319">
+            <geom mass="0.01" friction="0.1 0.1 0.1" name="geom_movable_obstacle_4" rgba="1 0 0. 1" size="0.03 0.05" type="cylinder" />
+            <joint name="joint_movable_obstacle_4" type="free" />
+        </body>
+
+        <body name="movable_obstacle_5" pos="0.5792700314584408 -0.26021655046191533 0.04999696870367356" quat="0.996886930939324 7.425809610586548e-09 7.261161012173379e-09 -0.07884444763187445">
+            <geom mass="0.01" friction="0.1 0.1 0.1" name="geom_movable_obstacle_5" rgba="1 0 0. 1" size="0.03 0.05" type="cylinder" />
+            <joint name="joint_movable_obstacle_5" type="free" />
+        </body>
+
+        <body name="movable_obstacle_6" pos="0.7253573274899937 -0.25442619725177384 0.04999696870367356" quat="0.998095531962107 -1.0344299624902442e-08 6.579660758618365e-09 0.06168718730237933">
+            <geom mass="0.01" friction="0.1 0.1 0.1" name="geom_movable_obstacle_6" rgba="1 0 0. 1" size="0.03 0.05" type="cylinder" />
+            <joint name="joint_movable_obstacle_6" type="free" />
+        </body>
+
+        <body name="movable_obstacle_7" pos="0.6211230911774328 -0.18512942681191236 0.04999696870367352" quat="0.5595601189382667 8.461878034665532e-09 7.929483690643573e-09 0.8287897642308288">
+            <geom mass="0.01" friction="0.1 0.1 0.1" name="geom_movable_obstacle_7" rgba="1 0 0. 1" size="0.03 0.05" type="cylinder" />
+            <joint name="joint_movable_obstacle_7" type="free" />
+        </body>
+
+        <body name="movable_obstacle_8" pos="0.7034526895000889 -0.1966905945298508 0.04999696870367352" quat="0.6210516561395873 1.1091104362069335e-08 -5.265051105078269e-10 0.7837696347819785">
+            <geom mass="0.01" friction="0.1 0.1 0.1" name="geom_movable_obstacle_8" rgba="1 0 0. 1" size="0.03 0.05" type="cylinder" />
+            <joint name="joint_movable_obstacle_8" type="free" />
+        </body>
+
+        <body name="movable_obstacle_9" pos="0.7026153372536932 0.2851999568913266 0.04999696870367352" quat="0.6709708661994647 -4.619670478101307e-09 9.82076997873711e-10 0.7414837130453642">
+            <geom mass="0.01" friction="0.1 0.1 0.1" name="geom_movable_obstacle_9" rgba="1 0 0. 1" size="0.03 0.05" type="cylinder" />
+            <joint name="joint_movable_obstacle_9" type="free" />
+        </body>
+
+        <body name="movable_obstacle_10" pos="0.5868277129604078 0.10221214546782276 0.04999696870367356" quat="0.8693240367681511 1.5939164634182064e-10 -5.1039477359432405e-09 0.49424257110969944">
+            <geom mass="0.01" friction="0.1 0.1 0.1" name="geom_movable_obstacle_10" rgba="1 0 0. 1" size="0.03 0.05" type="cylinder" />
+            <joint name="joint_movable_obstacle_10" type="free" />
+        </body>
+
+        <body name="movable_obstacle_11" pos="0.6046065066407794 0.03124399434866215 0.04999696870367352" quat="-0.4179586451171857 -8.576196911064527e-09 -4.764721505237731e-09 -0.9084660538356987">
+            <geom mass="0.01" friction="0.1 0.1 0.1" name="geom_movable_obstacle_11" rgba="1 0 0. 1" size="0.03 0.05" type="cylinder" />
+            <joint name="joint_movable_obstacle_11" type="free" />
+        </body>
+
+        <body name="movable_obstacle_12" pos="0.5895195645002722 -0.035604143089448134 0.04999696870367356" quat="-0.14929565923243868 4.778380030419729e-09 -6.947102654691107e-09 -0.988792600161607">
+            <geom mass="0.01" friction="0.1 0.1 0.1" name="geom_movable_obstacle_12" rgba="1 0 0. 1" size="0.03 0.05" type="cylinder" />
+            <joint name="joint_movable_obstacle_12" type="free" />
+        </body>
+
+        <body name="movable_obstacle_13" pos="0.6433023150375161 0.12456247673340773 0.04999696870367352" quat="-0.12315129311240132 7.96105093773614e-09 8.986031080888333e-09 0.9923879075264589">
+            <geom mass="0.01" friction="0.1 0.1 0.1" name="geom_movable_obstacle_13" rgba="1 0 0. 1" size="0.03 0.05" type="cylinder" />
+            <joint name="joint_movable_obstacle_13" type="free" />
+        </body>
+
+        <body name="movable_obstacle_14" pos="0.5159663798886686 0.19852141415721614 0.04999696870367352" quat="0.9834999399703641 7.982352938122481e-09 -3.5409239274871333e-10 0.1809084522024614">
+            <geom mass="0.01" friction="0.1 0.1 0.1" name="geom_movable_obstacle_14" rgba="1 0 0. 1" size="0.03 0.05" type="cylinder" />
+            <joint name="joint_movable_obstacle_14" type="free" />
+        </body>
+
+        <body name="movable_obstacle_15" pos="0.5116304171296294 -0.03289428643393206 0.049996968703673525" quat="0.8054549874081661 6.942648103530398e-09 9.307745425730743e-09 -0.5926569524263687">
+            <geom mass="0.01" friction="0.1 0.1 0.1" name="geom_movable_obstacle_15" rgba="1 0 0. 1" size="0.03 0.05" type="cylinder" />
+            <joint name="joint_movable_obstacle_15" type="free" />
+        </body>
+
+        <body name="movable_obstacle_16" pos="0.6619149143613806 -0.017328309900650207 0.04999696870367356" quat="0.9998362592581107 -7.254545184326223e-09 -6.092892542084777e-09 -0.018095708683224215">
+            <geom mass="0.01" friction="0.1 0.1 0.1" name="geom_movable_obstacle_16" rgba="1 0 0. 1" size="0.03 0.05" type="cylinder" />
+            <joint name="joint_movable_obstacle_16" type="free" />
+        </body>
+
+        <body name="movable_obstacle_17" pos="0.5977871434317675 0.1702081078741536 0.04999696870367356" quat="0.9999817649328296 6.068781723181279e-09 -7.052292979456189e-09 -0.0060390232507419725">
+            <geom mass="0.01" friction="0.1 0.1 0.1" name="geom_movable_obstacle_17" rgba="1 0 0. 1" size="0.03 0.05" type="cylinder" />
+            <joint name="joint_movable_obstacle_17" type="free" />
+        </body>
+
+        <body name="movable_obstacle_18" pos="0.6693439905976973 -0.30099305871319115 0.04999696870367356" quat="0.9426793492870127 1.2517097030753126e-08 -6.790335328374813e-10 0.33369993171682605">
+            <geom mass="0.01" friction="0.1 0.1 0.1" name="geom_movable_obstacle_18" rgba="1 0 0. 1" size="0.03 0.05" type="cylinder" />
+            <joint name="joint_movable_obstacle_18" type="free" />
+        </body>
+
+        <body name="movable_obstacle_19" pos="0.5211929828844422 0.10005252022289135 0.04999696870367356" quat="0.7331034903943917 -9.106761252390652e-09 1.982332292922126e-09 0.6801171019549208">
+            <geom mass="0.01" friction="0.1 0.1 0.1" name="geom_movable_obstacle_19" rgba="1 0 0. 1" size="0.03 0.05" type="cylinder" />
+            <joint name="joint_movable_obstacle_19" type="free" />
+        </body>
+
+        <body name="movable_obstacle_20" pos="0.7306934408805223 0.21979452198832608 0.04999696870367356" quat="0.9195683932923906 6.3489990012508815e-09 -1.2239407658219425e-08 0.3929299811132403">
+            <geom mass="0.01" friction="0.1 0.1 0.1" name="geom_movable_obstacle_20" rgba="1 0 0. 1" size="0.03 0.05" type="cylinder" />
+            <joint name="joint_movable_obstacle_20" type="free" />
+        </body>
+    </worldbody>
+</mujoco>

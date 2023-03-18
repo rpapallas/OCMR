@@ -1,0 +1,35 @@
+<!--
+Copyright (C) 2018 The University of Leeds and Rafael Papallas
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+Author: Rafael Papallas (www.rpapallas.com)
+-->
+<mujoco>
+    <body name="supporting_surface" pos="0.63 0.0 0.22">
+        <geom type="box" name="shelf_top_geom" contype="4" conaffinity="3" mass="100" friction="0.1 0.1 0.1" size="0.15 0.355 0.2175" rgba="0.90 0.67 0.36 1." />
+    </body>
+
+    <body name="shelf" pos="0.63 0.0 0.22">
+        <geom type="box" name="shelf_top__plate_geom" pos="0 0 0.48" size="0.15 0.355 0.007" rgba="0.90 0.67 0.36 1." />
+        <geom type="box" name="right_side_wall_invisible" pos="-0.01 -0.445 0.333" mass="100" friction="0.5 0.5 0.5" size="0.2 0.1 0.2" rgba="0.76 0.6 0.42 0." />
+        <geom type="box" name="right_side_wall" pos="-0.00 -0.35 0.348" friction="0.5 0.5 0.5" size="0.15 0.005 0.139" rgba="0.90 0.67 0.36 1." />
+
+        <geom type="box" name="left_side_wall_invisible" pos="-0.01 0.445 0.333" mass="100" friction="0.5 0.5 0.5" size="0.2 0.1 0.2" rgba="0.76 0.6 0.42 0." />
+        <geom type="box" name="left_side_wall" pos="-0.00 0.35 0.348" mass="100" friction="0.5 0.5 0.5" size="0.15 0.005 0.139" rgba="0.90 0.67 0.36 1." />
+
+        <geom type="box" name="back_side_wall_invisible" pos="0.24 0. 0.333" mass="100" friction="0.5 0.5 0.5" size="0.1 0.4 0.2" rgba="0.76 0.6 0.42 0." />
+        <geom type="box" name="back_side_wall" pos="0.145 0. 0.348" mass="100" friction="0.5 0.5 0.5" size="0.005 0.35 0.139" rgba="0.90 0.67 0.36 1." />
+    </body>
+</mujoco>

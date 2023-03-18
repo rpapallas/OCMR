@@ -1,0 +1,10 @@
+<mujoco>
+    <compiler angle="radian" meshdir="includes/meshes" texturedir="includes/texture" />
+
+    <option timestep="0.004" />
+
+    <visual>
+        <headlight active="1" />
+        <rgba haze="0.15 0.25 0.35 1" />
+    </visual>
+</mujoco>
