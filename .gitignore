@@ -127,3 +127,13 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+
+log.txt
+__pycache__
+*.swp
+.DS_Store
+MUJOCO_LOG.TXT
+.idea/
+*.mp4
+.virtualenv.path
