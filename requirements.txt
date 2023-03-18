@@ -1,0 +1,12 @@
+absl-py==1.2.0
+glfw==2.5.3
+imageio==2.19.5
+miniball==1.1.0
+mujoco==2.3.2
+mujoco-python-viewer @ git+https://github.com/rpapallas/mujoco-python-viewer@f22f19929357fda4fa0101e0ab65a577434e466f
+numpy==1.23.1
+Pillow==9.2.0
+PyOpenGL==3.1.6
+pyquaternion==0.9.9
+PyYAML==6.0
+tk==0.1.0
