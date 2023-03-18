@@ -1,0 +1,30 @@
+goal_object_name: 'goal_object'
+check_forces: true
+force_threshold: 5.0
+cost_threshold: 250
+distance_to_goal: 0.04
+time_limit: 180
+max_iterations: 50
+local_minima_iterations: 15
+number_of_rollouts: 60
+joint_noise_sigmas:
+  - 0.2
+  - 0.2
+  - 0.2
+  - 0.2
+  - 0.2
+  - 0.2
+  - 0.2
+static_obstacle_names:
+  - 'floor'
+  - 'shelf'
+robot_initial_configuration: 
+  - -0.937
+  - 0.674
+  - 0.256
+  - -2.719
+  - 2.387
+  - 1.5
+  - 0.512
+hand_initial_configuration: 0.0
+
